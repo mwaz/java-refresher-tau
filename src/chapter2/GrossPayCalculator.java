@@ -1,0 +1,26 @@
+package chapter2;
+
+import java.util.Scanner;
+
+public class GrossPayCalculator {
+
+	public static void main(String[] args){
+		// Get the hours worked
+		System.out.println("Enter the number of hours the employee worked");
+		Scanner scanner = new Scanner(System.in);
+		int hours = scanner.nextInt();
+
+		// Get the hourly pay rate
+		System.out.println("Enter the employees pay rate");
+		double rate = scanner.nextDouble();
+
+		// multiply hours and pay rate
+		double grossPay = hours * rate;
+
+		// Display Result
+		System.out.println("The employees gross pay is $" + grossPay);
+		scanner.close();
+
+	}
+
+}
