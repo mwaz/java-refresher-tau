@@ -42,14 +42,13 @@ public class PhoneBillCalculator {
 	}
 
 	public static void getTotal(double overage, double overageMinutes, double planFee, double tax){
-		double total = overage + tax + planFee;
+		double finalTotal = overage + tax + planFee;
 
-		System.out.println("Phone Bill Statement");
-		System.out.println("Plan: " + planFee);
-		System.out.println("Overage: " + overageMinutes);
-		System.out.println("Tax: " + tax);
-		System.out.println("Total: " + total);
-
+		System.out.println("Phone Bill Statement:");
+		System.out.println("Plan: " + String.format("%.2f", planFee));
+		System.out.println("Overage: " + String.format("%.2f", overageMinutes));
+		System.out.println("Tax: " + String.format("%.2f", tax));
+		System.out.println("Total: " + String.format("%.2f", finalTotal));
 	}
 
 
