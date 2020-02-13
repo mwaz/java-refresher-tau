@@ -21,7 +21,6 @@ public class PhoneBillCalculator {
 		System.out.println("Enter the plan fee");
 		double planFee = scanner.nextDouble();
 		return  planFee;
-
 	}
 
 	public static double getOverageMinutes(){
