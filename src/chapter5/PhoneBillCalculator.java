@@ -12,9 +12,7 @@ public class PhoneBillCalculator {
 		scanner.close();
 		double overage = calculateOverage(overageMinutes);
 		double tax = calculateTax(planFee, overage);
-
 		getTotal(overage, overageMinutes, planFee, tax);
-
 	}
 
 	public static double getPlanFee(){
@@ -49,8 +47,4 @@ public class PhoneBillCalculator {
 		System.out.println("Tax: " + String.format("%.2f", tax));
 		System.out.println("Total: " + String.format("%.2f", finalTotal));
 	}
-
-
-
-
 }
