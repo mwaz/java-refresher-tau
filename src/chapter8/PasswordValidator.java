@@ -42,7 +42,7 @@ public class PasswordValidator {
 
 	public static String checkSpecialCharacter(String password){
 		for(int i=0; i<password.length(); i++){
-			if(!Pattern.matches("[a-zA-Z0-9 ]+", password)){
+			if(!Pattern.matches("[a-zA-Z0-9 ]*", password)){
 				System.out.println("Matches Special character Requirement");
 			}
 			else System.out.println("Missing Special Character");
