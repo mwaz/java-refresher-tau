@@ -7,9 +7,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceeptionHandling {
-	public static void main(String [] args){
+	public static void main(String [] args) throws  Exception{
 //		createNewFile();
 		numbersExceptionHandling();
+		createNewFileRethrow();
 	}
 
 	public static void numbersExceptionHandling(){
@@ -43,6 +44,12 @@ public class ExceeptionHandling {
 			System.out.println("Directory does not exist.");
 			e.printStackTrace();
 		}
+	}
+
+	public static  void createNewFileRethrow() throws  IOException{
+		File file = new File("resources/nonexistent.txt");
+		file.createNewFile();
+
 	}
 
 }
